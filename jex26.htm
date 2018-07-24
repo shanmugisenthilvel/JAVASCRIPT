@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body{background-color:powderblue;}</style>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["name"].value;
+var d=document.Forms["myForm"]["age"].value;
+var r=document.forms["myForm"]["mobileno"].value
+if (x == ""||d ==""||r =="")
+{
+  alert("Fields must be filled out");
+return false;
+else
+{
+alert("HELLO  Thankyou for registering");
+return true;
+}
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="name"><br>
+<br>
+AGE:<input type="text" age="age"><br>
+<br>
+MOBILE NO:<input type="text" mobno="mobileno"><br>
+<br>
+<input type="button" onclick="validateForm()" value="REGISTER"></button>
+</form>
+
+</body>
+</html>

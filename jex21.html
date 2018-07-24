@@ -1,0 +1,27 @@
+<html>
+<head> ALL CHARACTERS
+<script>
+function validate(name)
+{
+var alphaExp = /^[a-zA-Z]+$/;
+var flag=false;
+if(name.value.match(alphaExp))
+{
+flag = true;
+}
+else
+flag = false;
+if (flag == true)
+{
+     alert("click continue");
+}
+else
+     alert("letters only");
+}
+</script></head>
+<body><br>
+NAME:<input type="text" id= "name"/>
+<input type="button" value="VALIDATE" onclick="validate(name.value)"/>
+</form>
+</body>
+</html>

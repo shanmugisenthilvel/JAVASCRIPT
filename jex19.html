@@ -1,0 +1,13 @@
+<html>
+<head><h1>FORM VALIDATION</h1></head>
+<body>
+
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p>A method to check the user entered information</p>
+
+</body>
+</html>
